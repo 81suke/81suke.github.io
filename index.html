@@ -1,66 +1,275 @@
 <!DOCTYPE html>
 <html lang="jp">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>ごみだめ</title>
-    <meta name="description" content="Core HTML Project">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="" />
+    <meta name="author" content="Tooplate" />
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Additional CSS Files -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/tooplate-style.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
+  </head>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/select2/select2.min.css">
-    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-    <link href="https://file.myfontastic.com/7vRKgqrN3iFEnLHuqYhYuL/icons.css" rel="stylesheet">
-
-    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-
-</head>
-<body data-spy="scroll" data-target="#navbar-nav-header" class="single-layout">
-<div class="jumbotron d-flex align-items-center" style="background-image: url(img/blog-1.jpg)">
-  <div class="container text-center">
-    <h1 class="display-2 mb-4 single-blog-title">Welcome to my page!</h1>
-    <p>制作物を保管するページ</p>
-  </div>
-</div>		<!-- Contact Form Section -->
-<section id="gtco-single-content" class="bg-white">
-    <div class="container">
-        <div class="section-content blog-content">
-            <div class="row">
-                <!-- Single Content Holder -->
-                <div class="col-md-8 offset-md-2 mt-4">
-
-                    
-                    <h3>Works</h3>
-                    <p>過去に制作した資料</p>
-                    <p>
-                        <ul>
-                            <li><a href="./math.html">数学</a></li>
-                            <li><a href="./report.html">実験レポート関連</a></li>
-                            <li><a href="./graduate_exam.html">院試関連</a></li>
-                            <li><a href="./lecture.html">Education</a></li>
-                        </ul>
-                    </p>
-
-                    
-                </div>
-                <!-- End of Contact Form Holder -->
+  <body>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <a href="index.html"><img src="assets/images/menu.png" alt="top-image" /></a>
             </div>
+            <div class="author-content">
+              <h4>ごみだめ</h4>
+              <span>share drive of past products</span>
+            </div>
+            <nav class="main-nav" role="navigation">
+              <ul class="main-menu">
+                <li><a href="#section1">About me</a></li>
+                <li><a href="#section2">Products</a></li>
+                <li><a href="#section3">Education</a></li>
+                <li><a href="#section4">Column</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
+      </div> 
+
+      <section class="section about-me" data-section="section1">
+        <div class="container">
+        <div class="top-header">
+        	<img src="assets/images/bridge.png" alt="SHINMINATO-bridge" />
+        </div>
+        <div class="section-heading">
+          <h2>About me</h2>
+          <div class="line-dec"></div>
+          <span>東京工業大学　環境・社会理工学院　土木工学コース　M1<br>
+            学士(工学)<br>
+            <a href="http://www.sasaki.cv.ens.titech.ac.jp/">研究室HP</a>
+          </span>
+        </div>
+        </div>
+      </section>
+
+      <section class="section product" data-section="section2">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Products</h2>
+            <div class="line-dec"></div>
+            <span>過去に作成したものやいろいろを公開しています．<br>
+              利用は自由ですが，二次配布等は禁止します．また，内容の正確性の保証はいたしかねます．
+            </span>
+          </div>
+
+          <div class="right-image-post">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="left-text">
+                  <h4>Mathematics</h4>
+                  <p>微分方程式，確率論，統計学についての基礎</p>
+                  <div class="white-button">
+                    <a href="math.html">ダウンロード</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="right-image">
+                  <img src="assets/images/mathematics_image.png" alt="Mathematics" />
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="left-image"> 
+                  <img src="assets/images/report_image.png" alt="testing-machine" />
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="right-text">
+                  <h4>Report</h4>
+                  <p>過去レポート等を公開していますが，不正防止のためパスワードで保護しています．</p>
+                  <div class="white-button">
+                    <a href="report.html">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-image-post">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="left-text">
+                  <h4>Graduate Exam</h4>
+                  <p>過去の院試の情報，過去問について</p>
+                  <div class="white-button">
+                    <a href="graduate_exam.html">ダウンロード</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="right-image">
+                  <img src="assets/images/exam_image.png" alt="exam" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="left-image"> 
+                  <img src="assets/images/book_image.png" alt="article" />
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="right-text">
+                  <h4>Others</h4>
+                  <p>その他の考察まとめ．気分と関心でテーマが決まります．</p>
+                  <div class="white-button">
+                    <a href="report.html">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section education" data-section="section3">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Educations</h2>
+            <div class="line-dec"></div>
+            <span>中高生向けの学習資料</span>
+          </div>
+          <div class="white-button">
+            <a href="lecture.html">Read more</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section column" data-section="section4">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Column</h2>
+            <div class="line-dec"></div>
+            <span>自分なりに取り組んでいること，知識不足なりに勉強したことをまとめる．準備中．</span>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="service-item">
+                <i class="fa fa-area-chart"></i>
+                <h4>Sort algorithm</h4>
+                <p>各種ソートアルゴリズムの比較．コンピュータサイエンスの基礎．</p>
+              </div>
+            </div> 
+            <div class="col-md-6">
+              <div class="service-item">
+                <i class="fa fa-check-square-o"></i>
+                <h4>"受験"勉強といふもの</h4>
+                <p>私なりの勉強の取り組み方の考え．合格に必要なことは何でしょうか．</p>
+              </div> 
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <i class="fa fa-question-circle"></i>
+                <h4>土木工学について</h4>
+                <p>土木工学と現在のトレンドについての雑記，研究テーマの紹介．</p>
+              </div> 
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <i class="fa fa-support"></i>
+                <h4>音楽ゲームのはなし</h4>
+                <p>中学生の頃から嗜んでいる（<s>時間を奪われている</s>）音ゲーについて</p>
+              </div>
+            </div> 
+          </div>
+        </div> 
+      </section>
+
+      <section class="section contact-me" data-section="section4">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Contact</h2>
+            <div class="line-dec"></div>
+            <span>sasaki.e.edu (at) gmail.com</span>
+          </div>
+          </div>
+        </div>
+      </section>
     </div>
-</section>
-<!-- End of Contact Form Section --></div>
-</div>
-</body>
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+    </script>
+  </body>
 </html>
