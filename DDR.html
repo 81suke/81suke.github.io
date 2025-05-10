@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>report</title>
+    <meta name="description" content="" />
+    <meta name="author" content="Tooplate" />
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Additional CSS Files -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/tooplate-style.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
+  </head>
+
+  <body>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <a href="index.html"><img src="assets/images/menu.png" alt="top-image" /></a>
+            </div>
+            <div class="author-content">
+              <h4>ごみだめ</h4>
+              <span>DDR</span>
+            </div>
+            <nav class="main-nav" role="navigation">
+              <ul class="main-menu">
+                <li><a href="#top">はじめに</a></li>
+                <li><a href="#diff14">足14</a></li>
+                <li><a href="#diff15">足15</a></li>
+                <li><a href="#diff16">足16</a></li>
+                <li><a href="#diff17">足17</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div> 
+
+      <section class="section top" data-section="top">
+        <div class="container">
+        <div class="top-header">
+        	<a href="index.html"><img src="DDR/DDR_result_image.jpg" alt="FLAREVI" /></a>
+        </div><br>
+        DDR成長日記（のつもり）
+        <div class="section-heading">
+            <h2>はじめに</h2>
+            <div class="line-dec"></div>
+                 <ul>
+                    <li>クリアラーの所感をまとめていく</li>
+                    <ol>
+                      <li>シングルプレイが対象</li><br>
+                      <li>スコアは度外視（餡蜜等あり）</li><br>
+                      <li>ノマゲ or FLARE Iによる発クリアを目指す</li><br>
+                    </ol>
+                  </ul>
+            </div>
+        </div>
+      </section>
+
+      <section class="section 14" data-section="diff14">
+        <div class="container">
+        <div class="section-heading">
+            <h2>足14</h2>
+            <div class="line-dec"></div>
+              <p>
+                <ul>
+                  <li>計画演習</li>
+                    <ol>
+                      <li><a href="./bachelor_report/環境計画プロジェクト2019_2班.pdf">環境計画プロジェクト演習</a></li><br>
+                      <li>都市交通計画プロジェクト演習</li>
+                    </ol>
+                  <br><br>
+
+                  <li>構造力学実験</li>
+                    <ol>
+                      <li><a href="./bachelor_report/引張試験.pdf">引張試験</a></li><br>
+                      <li>はりの曲げと振動</li>
+                      <ol>
+                        <li><a href="./bachelor_report/はりの曲げと振動_計画書.pdf">実験計画書</a></li><br>
+                        <li><a href="./bachelor_report/はりの曲げと振動_報告書.pdf">実験報告書</a></li>
+                      </ol>
+                      <li><a href="./bachelor_report/座屈.pdf">座屈</a></li>
+                    </ol>
+                  <br><br>
+                            
+                </ul>
+              </p>
+        </div>
+        </div>
+      </section>
+
+      <section class="section 15" data-section="diff15">
+        <div class="container">
+        <div class="section-heading">
+            <h2>足15</h2>
+            <div class="line-dec"></div>
+                        now construction
+        </div>
+        </div>
+      </section>
+
+      <section class="section 16" data-section="diff16">
+        <div class="container">
+        <div class="section-heading">
+            <h2>足15</h2>
+            <div class="line-dec"></div>
+                        now construction
+        </div>
+        </div>
+      </section>
+
+      <section class="section 17" data-section="diff17">
+        <div class="container">
+        <div class="section-heading">
+            <h2>足15</h2>
+            <div class="line-dec"></div>
+                        now construction
+        </div>
+        </div>
+      </section>
+
+    </div>
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+    </script>
+  </body>
+</html>
